@@ -3,9 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2018
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiStudent", "CoreApiStudent\CoreApiStudent.csproj", "{84FC9C92-B6D7-4695-9C4B-A50DDFFE5971}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CoreApiStudent", "CoreApiStudent\CoreApiStudent.csproj", "{84FC9C92-B6D7-4695-9C4B-A50DDFFE5971}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{580B74D2-F004-4B04-98B2-6344EBB8B783}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreApiStudentUI", "CoreApiStudentUI", "{CAD9047E-3DD7-45FF-B27B-D439A8FC8ADA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreApiStudentApi", "CoreApiStudentApi", "{1E5DE331-5C62-49DE-980E-A0327EB32538}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreApiStudentDomain", "CoreApiStudentDomain", "{673B082E-DF97-4A59-9EE6-6CF5AA0F4E6F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CoreApiStudentDatabase", "CoreApiStudentDatabase", "{D15412BB-DA42-4204-8DF0-B40A535050B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiStudentApiLayer", "..\CoreApiStudentApiLayer\CoreApiStudentApiLayer.csproj", "{A28927B4-5E68-418C-96BC-9F0E5DD76B84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoreApiStudentDomainLayer", "..\CoreApiStudentDomainLayer\CoreApiStudentDomainLayer.csproj", "{269E6388-1E85-4166-B128-ED20FE66C0B5}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CoreApiStudentDatabase", "..\CoreApiStudentDatabase\CoreApiStudentDatabase.sqlproj", "{B010C978-FDA4-4B1D-97AD-56871FB1AC07}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +35,29 @@ Global
 		{580B74D2-F004-4B04-98B2-6344EBB8B783}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{580B74D2-F004-4B04-98B2-6344EBB8B783}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{580B74D2-F004-4B04-98B2-6344EBB8B783}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28927B4-5E68-418C-96BC-9F0E5DD76B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28927B4-5E68-418C-96BC-9F0E5DD76B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28927B4-5E68-418C-96BC-9F0E5DD76B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28927B4-5E68-418C-96BC-9F0E5DD76B84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{269E6388-1E85-4166-B128-ED20FE66C0B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{269E6388-1E85-4166-B128-ED20FE66C0B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{269E6388-1E85-4166-B128-ED20FE66C0B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{269E6388-1E85-4166-B128-ED20FE66C0B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B010C978-FDA4-4B1D-97AD-56871FB1AC07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B010C978-FDA4-4B1D-97AD-56871FB1AC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B010C978-FDA4-4B1D-97AD-56871FB1AC07}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B010C978-FDA4-4B1D-97AD-56871FB1AC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B010C978-FDA4-4B1D-97AD-56871FB1AC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B010C978-FDA4-4B1D-97AD-56871FB1AC07}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{84FC9C92-B6D7-4695-9C4B-A50DDFFE5971} = {CAD9047E-3DD7-45FF-B27B-D439A8FC8ADA}
+		{A28927B4-5E68-418C-96BC-9F0E5DD76B84} = {1E5DE331-5C62-49DE-980E-A0327EB32538}
+		{269E6388-1E85-4166-B128-ED20FE66C0B5} = {673B082E-DF97-4A59-9EE6-6CF5AA0F4E6F}
+		{B010C978-FDA4-4B1D-97AD-56871FB1AC07} = {D15412BB-DA42-4204-8DF0-B40A535050B1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {41B5DD12-FB37-4B1E-BD2A-CAF640B0AA7F}
