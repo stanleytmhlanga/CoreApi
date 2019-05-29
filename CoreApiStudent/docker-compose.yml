@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  coreapistudent:
+    image: ${DOCKER_REGISTRY}coreapistudent
+    build:
+      context: .
+      dockerfile: CoreApiStudent\Dockerfile
